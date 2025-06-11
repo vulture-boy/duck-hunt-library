@@ -1,0 +1,57 @@
+body {
+    font-family: 'urbanist', sans-serif;
+    color: #e6e6de;
+    background-color: #6c6760;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: xx-small;
+    background-color: #3c3a39;
+    position: fixed;
+    bottom:0;
+    right:0
+}
+
+hr {
+    color: #e6e6de;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.thumb-img {
+    object-fit: cover;
+    overflow: clip;
+    overflow-clip-margin: 20rem 20rem;;
+    width: 30rem;
+    height: 30rem;
+    object-position: center;
+    width: auto 4rem;
+    height: 20rem;
+}
+
+.socialsIcon {
+    font-size: 1em;
+}
+
+#menuBar {
+    font-family: 'Major Mono Display', monospace;
+    width: 280px;
+}
+
+#galleryDescriptorHeader {
+    text-align: right;
+    padding-top: 6%;
+    padding-right: 2%;
+}
+
+::selection {
+    background: #a6d0d6; /* WebKit/Blink Browsers */
+  }
+
+a:link, a:visited {
+    color: #cacab6;
+}
