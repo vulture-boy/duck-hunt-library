@@ -7,14 +7,11 @@ export default function Menubar() {
     return (
     <>
     <div id="menuBar" className="flex-shrink-0 p-3">
-        <a href="/" className="d-flex align-items-left pb-3 mb-3 link-dark text-decoration-none border-bottom">
-
-        </a>
-
+        <Link href="/" className="d-flex align-items-left pb-3 mb-3 link-dark text-decoration-none border-bottom"></Link>
         <Link href="/" id="titleName">duck hunt library</Link>
 
         <ul className="list-unstyled ps-0">
-
+            
         <li className="mb-1">
             <button className="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#general-collapse" aria-expanded="false">
             character

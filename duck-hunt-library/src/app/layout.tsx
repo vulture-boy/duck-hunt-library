@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Header from "./header";
-import Footer from "./footer";
 import  "bootstrap/dist/css/bootstrap.min.css"
 
 export const metadata: Metadata = {
