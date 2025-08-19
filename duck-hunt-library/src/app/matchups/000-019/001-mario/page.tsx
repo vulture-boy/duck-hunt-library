@@ -1,25 +1,47 @@
+'use client';
+
 import '../../../global.css'
+import './styles.css'
 import Header from "@/app/header";
 import Footer from "@/app/footer";
 import Link from 'next/link';
+import { gql, useQuery } from '@apollo/client';
+import { ApolloWrapper } from '@/lib/apollo-wrapper';
 
-export default function Home() {
+const GET_MARIO_DATA = gql`
+  query GetMarioData {
+    character(name: "Mario") {
+      name
+      groundCC
+      shortHopCC
+      clayCC
+      clayStanding
+      ledgeSideTiltKO
+      ledgeAirKO
+      upSmashKO
+      ledgeSideSmashKO
+      upAirStrongKO
+      clayToSideSmash
+      ccToSideSmash
+      ledgesideAerialMeteor
+      sombrero
+      airNDown
+      airNWeakDown
+      upThrowThunder
+      downAirUpStrong
+      ledgeSteal
+      fastestLedgeStealInside
+      slowestLedgeStealInside
+      upAirNeutralAir
+    }
+  }
+`;
+
+function MarioMatchupDescription()
+{
   return (
-    <div className="container">
-      <Header />
-      <div className="row">
-        <div className="col-sm-12">
-          <h1>Matchups #01: Mario</h1>
-          <hr/>
-          <h2>External Resources</h2>
-          <p>
-            <a href="https://www.ssbwiki.com/Mario_(SSBU)">{"Mario's SSBWiki Entry"}</a><br/>
-            <a href="https://ultimateframedata.com/mario.php">{"Mario's UltimateFrameData Page"}</a><br/>
-            <a href="https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%9E%E3%83%AA%E3%82%AA&free_word=&region=&submit=#result">SmashTube Query for Duck Hunt vs. Mario</a><br/>
-            <a href="https://discord.com/invite/xARdRQ3eGz">Mario Character Discord</a>
-          </p>
-          <hr/>
-          <h2>Summary</h2>
+    <div className="matchup-description">
+  <h2>Summary</h2>
           <p>
             [no description available]
           </p>
@@ -204,12 +226,121 @@ export default function Home() {
             Not peer reviewed<br/>
             Includes observations by Pyro-Is-Magic, Spin, Storkins, tater, and Wisdom<br/>
             Some notes from Mr.F in the Mario Character Discord.
+            </p>
+            </div>
+  );
+}
 
-            <br/><br/><a href="https://github.com/vulture-boy/duck-hunt-ssbu/issues/1" target="_blank">GitHub Task: Contribute Suggestions Here!</a>
-          </p>
-        </div>
+function MarioMatchupData() {
+  const { loading, error, data } = useQuery(GET_MARIO_DATA);
+
+  if (loading) return <p>Loading matchup data...</p>;
+  if (error) return <p>Error loading matchup data: {error.message}</p>;
+  if (!data?.character) return <p>No data found for Mario</p>;
+
+  const mario = data.character;
+
+  return (
+    <div className="matchup-data">
+      <h2>Frame Data & Matchup Information</h2>
+      <div className="data-section">
+        <h3>Clay Pigeon Data</h3>
+        <table className="table table-striped">
+          <tbody>
+            <tr>
+              <td>Ground Clay Cancel:</td>
+              <td>{mario.groundCC || 'N/A'}</td>
+            </tr>
+            <tr>
+              <td>Short Hop Clay Cancel:</td>
+              <td>{mario.shortHopCC || 'N/A'}</td>
+            </tr>
+            <tr>
+              <td>Clay Standing:</td>
+              <td>{mario.clayStanding || 'N/A'}</td>
+            </tr>
+            <tr>
+              <td>Clay to Side Smash:</td>
+              <td>{mario.clayToSideSmash || 'N/A'}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>KO Percents</h3>
+        <table className="table table-striped">
+          <tbody>
+            <tr>
+              <td>Ledge Side Tilt KO:</td>
+              <td>{mario.ledgeSideTiltKO}%</td>
+            </tr>
+            <tr>
+              <td>Ledge Air KO:</td>
+              <td>{mario.ledgeAirKO}%</td>
+            </tr>
+            <tr>
+              <td>Up Smash KO:</td>
+              <td>{mario.upSmashKO}%</td>
+            </tr>
+            <tr>
+              <td>Ledge Side Smash KO:</td>
+              <td>{mario.ledgeSideSmashKO}%</td>
+            </tr>
+            <tr>
+              <td>Up Air Strong KO:</td>
+              <td>{mario.upAirStrongKO}%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Additional Data</h3>
+        <table className="table table-striped">
+          <tbody>
+            <tr>
+              <td>Sombrero:</td>
+              <td>{mario.sombrero}%</td>
+            </tr>
+            <tr>
+              <td>Air N Down:</td>
+              <td>{mario.airNDown}%</td>
+            </tr>
+            <tr>
+              <td>Air N Weak Down:</td>
+              <td>{mario.airNWeakDown}%</td>
+            </tr>
+            <tr>
+              <td>Ledge Steal:</td>
+              <td>{mario.ledgeSteal}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <Footer />
+      
+      <h2>External Resources</h2>
+      <p>
+        <a href="https://www.ssbwiki.com/Mario_(SSBU)">{"Mario's SSBWiki Entry"}</a><br/>
+        <a href="https://ultimateframedata.com/mario.php">{"Mario's UltimateFrameData Page"}</a><br/>
+        <a href="https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%9E%E3%83%AA%E3%82%AA&free_word=&region=&submit=#result">SmashTube Query for Duck Hunt vs. Mario</a><br/>
+        <a href="https://discord.com/invite/xARdRQ3eGz">Mario Character Discord</a>
+      </p>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <ApolloWrapper>
+      <div className="container">
+        <Header />
+        <div className="row">
+          <div className="col-sm-12">
+            <h1>Matchups #01: Mario</h1>
+            <hr/>
+            <MarioMatchupData />
+            <MarioMatchupDescription />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </ApolloWrapper>
   );
 }
