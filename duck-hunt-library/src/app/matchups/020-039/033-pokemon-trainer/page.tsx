@@ -2,9 +2,9 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Pokemon Trainer (Squirtle)", displayName: "Squirtle" },
-    { name: "Pokemon Trainer (Ivysaur)", displayName: "Ivysaur" },
-    { name: "Pokemon Trainer (Charizard)", displayName: "Charizard" }
+    { name: "squirtle", displayName: "Squirtle" },
+    { name: "ivysaur", displayName: "Ivysaur" },
+    { name: "charizard", displayName: "Charizard" }
   ],
   matchupNumber: "033",
   contentId: "033-pokemon-trainer",

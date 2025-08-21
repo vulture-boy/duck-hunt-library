@@ -2,12 +2,11 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Rosalina & Luma (Rosalina)", displayName: "With Luma" },
-    { name: "Rosalina & Luma (Luma)", displayName: "Without Luma" }
+    { name: "rosalina", variant: "rosalina", displayName: "Rosalina" },
+    { name: "rosalina", variant: "luma", displayName: "Luma" }
   ],
   matchupNumber: "048",
-  contentId: "048-rosalina",
-  pageDisplayName: "Rosalina & Luma"
+  contentId: "048-rosalina"
 }
 
 export default function Page() {

@@ -2,7 +2,7 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Toon Link" }
+    { name: "toon-link", displayName: "Toon Link" }
   ],
   matchupNumber: "043",
   contentId: "043-toon-link"

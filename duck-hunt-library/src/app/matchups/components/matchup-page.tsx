@@ -2,8 +2,10 @@ import '../../global.css'
 import './styles.css'
 import Header from "@/app/header";
 import Footer from "@/app/footer";
-import { getMatchupContent } from '@/lib/matchup-utils';
+import { getMatchupMarkdownContent } from '@/lib/markdown-utils';
 import ClientContent from './character-matchup';
+import { getNextMatchup, getPreviousMatchup } from '@/lib/matchup-data';
+import MatchupNav from './matchup-nav';
 
 interface CharacterVariant {
   name: string;
@@ -21,11 +23,10 @@ export default async function MatchupPage({ matchupInfo }: { matchupInfo: Matchu
   let content;
   
   try {
-    console.log('Page: Starting to fetch matchup content');
-    const { contentHtml } = await getMatchupContent(matchupInfo.contentId);
+    const { contentHtml } = await getMatchupMarkdownContent(matchupInfo.contentId);
     
     if (!contentHtml) {
-      throw new Error('No content received from API');
+      throw new Error('No content found in markdown file');
     }
     
     console.log('Page: Content received, length:', contentHtml.length);
@@ -39,16 +40,22 @@ export default async function MatchupPage({ matchupInfo }: { matchupInfo: Matchu
   }
 
   return (
-    <div className="container">
-      <Header />
-      <div className="row">
-        <div className="col-sm-12">
-          <h1>Matchups #{matchupInfo.matchupNumber}: {matchupInfo.pageDisplayName || matchupInfo.characterVariants.map(v => v.displayName || v.name).join(' & ')}</h1>
-          <hr/>
-          {content}
+    <>
+      <div className="container">
+        <Header />
+        <div className="row">
+          <div className="col-sm-12">
+            <MatchupNav 
+              previousMatchup={getPreviousMatchup(matchupInfo.matchupNumber)}
+              nextMatchup={getNextMatchup(matchupInfo.matchupNumber)}
+              title={`Matchups #${matchupInfo.matchupNumber}: ${matchupInfo.pageDisplayName || matchupInfo.characterVariants.map(v => v.displayName || v.name).join(' & ')}`}
+            />
+            <hr/>
+            {content}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }

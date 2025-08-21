@@ -2,8 +2,8 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Samus", displayName: "Samus" },
-    { name: "Dark Samus", displayName: "Dark Samus" }
+    { name: "samus", displayName: "Samus" },
+    { name: "dark-samus", displayName: "Dark Samus" }
   ],
   matchupNumber: "004",
   contentId: "004-samus"

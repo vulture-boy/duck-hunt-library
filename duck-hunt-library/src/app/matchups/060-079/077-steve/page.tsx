@@ -2,12 +2,12 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Steve (Unequipped)", displayName: "Unequipped" },
-    { name: "Steve (Wood)", displayName: "Wood" },
-    { name: "Steve (Stone)", displayName: "Stone" },
-    { name: "Steve (Iron)", displayName: "Iron" },
-    { name: "Steve (Gold)", displayName: "Gold" },
-    { name: "Steve (Diamond)", displayName: "Diamond" }
+    { name: "steve", variant: "unequipped", displayName: "Unequipped" },
+    { name: "steve", variant: "wood", displayName: "Wood" },
+    { name: "steve", variant: "stone", displayName: "Stone" },
+    { name: "steve", variant: "iron", displayName: "Iron" },
+    { name: "steve", variant: "gold", displayName: "Gold" },
+    { name: "steve", variant: "diamond", displayName: "Diamond" }
   ],
   matchupNumber: "077",
   contentId: "077-steve",

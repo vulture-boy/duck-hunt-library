@@ -14,10 +14,7 @@ export async function getMatchupContent(id: string) {
       ? window.location.origin 
       : 'http://localhost:3000';
     
-    const response = await fetch(`${baseUrl}/api/matchups?id=${encodeURIComponent(id)}`, {
-      // Ensure we're making a fresh request during development
-      cache: 'no-store'
-    });
+    const response = await fetch(`${baseUrl}/api/matchups?id=${encodeURIComponent(id)}`);
 
     if (!response.ok) {
       const errorText = await response.text();

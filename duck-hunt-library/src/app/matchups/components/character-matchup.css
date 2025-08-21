@@ -1,0 +1,8 @@
+.text-muted {
+  color: #6c757d;
+}
+
+.same-value-arrow {
+  color: #808080;  /* A medium gray that's clearly visible */
+  font-size: 0.9em;  /* Slightly smaller than the normal text */
+}

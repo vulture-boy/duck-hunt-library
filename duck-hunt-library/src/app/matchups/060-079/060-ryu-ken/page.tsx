@@ -2,10 +2,10 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Ryu (Normal)", displayName: "Normal" },
-    { name: "Ryu (Strong)", displayName: "Strong" },
-    { name: "Ken (Normal)", displayName: "Normal" },
-    { name: "Ken (Strong)", displayName: "Strong" }
+    { name: "ryu", variant: "normal", displayName: "Ryu (Normal)" },
+    { name: "ryu", variant: "strong", displayName: "Ryu (Strong)" },
+    { name: "ken", variant: "normal", displayName: "Ken (Normal)" },
+    { name: "ken", variant: "strong", displayName: "Ken (Strong)" }
   ],
   matchupNumber: "060",
   contentId: "060-ryu-ken",

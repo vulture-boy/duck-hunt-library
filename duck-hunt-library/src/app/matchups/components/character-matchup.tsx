@@ -1,18 +1,25 @@
 'use client';
 
-import { useQuery } from '@apollo/client';
-import { GET_CHARACTER_DATA, type CharacterData } from '@/lib/character-utils';
-import { ApolloWrapper } from '@/lib/apollo-wrapper';
+import { getCharacterData, type CharacterStats } from '@/lib/character-utils';
+import './character-matchup.css';
 
 interface CharacterVariant {
   name: string;
-  displayName?: string;  // For showing a different name in the UI
+  displayName: string;  // For showing a different name in the UI
+  variant?: string;    // Specific variant identifier
 }
 
+type MatchedCharacterInfo = { 
+  data: CharacterStats, 
+  variant: CharacterVariant,
+  key: string         // Unique key for this character variant
+};
+
 interface MatchupInfo {
-  characterVariants: CharacterVariant[];
+  characterVariants: { name: string; variant?: string; displayName?: string }[];
   matchupNumber: string;
   contentId: string;
+  pageDisplayName?: string;
 }
 
 interface ClientContentProps extends MatchupInfo {
@@ -20,7 +27,6 @@ interface ClientContentProps extends MatchupInfo {
 }
 
 function CharacterMatchupDescription({ contentHtml }: { contentHtml: string }) {
-  console.log('Client: Rendering description with content length:', contentHtml?.length);
   if (!contentHtml) {
     console.error('Client: No content provided to CharacterMatchupDescription');
     return <div className="matchup-description">No content available</div>;
@@ -30,157 +36,152 @@ function CharacterMatchupDescription({ contentHtml }: { contentHtml: string }) {
   );
 }
 
-function useCharacterQueries(characterVariants: CharacterVariant[]) {
-  return characterVariants.map(variant => {
-    return useQuery<{ character: CharacterData }>(GET_CHARACTER_DATA, {
-      variables: { name: variant.name }
-    });
-  });
+interface TableSection {
+  title: string;
+  rows: { label: string; field: string; suffix?: string }[];
 }
 
-function CharacterMatchupData({ characterVariants }: { characterVariants: CharacterVariant[] }) {
-  const queries = useCharacterQueries(characterVariants);
-
-  if (queries.some(q => q.loading)) return <p>Loading matchup data...</p>;
-  if (queries.some(q => q.error)) {
-    const errors = queries.map(q => q.error?.message).filter(Boolean);
-    return <p>Error loading matchup data: {errors.join(', ')}</p>;
+const tableSections: TableSection[] = [
+  {
+    title: "Clay Pigeon Data",
+    rows: [
+      { label: "Ground Clay Chain", field: "groundCC" },
+      { label: "Short Hop Clay Chain", field: "shortHopCC" },
+      { label: "Clay Chain", field: "clayCC" },
+      { label: "Clay Standing", field: "clayStanding" },
+      { label: "Clay to Side Smash", field: "clayToSideSmash" },
+      { label: "CC to Side Smash", field: "ccToSideSmash" }
+    ]
+  },
+  {
+    title: "KO Percents",
+    rows: [
+      { label: "Ledge Side Tilt KO", field: "ledgeSideTiltKO", suffix: "%" },
+      { label: "Ledge Aerial KO", field: "ledgeAirKO", suffix: "%" },
+      { label: "Up Smash KO", field: "upSmashKO", suffix: "%" },
+      { label: "Ledge Side Smash KO", field: "ledgeSideSmashKO", suffix: "%" },
+      { label: "Up Air Strong KO", field: "upAirStrongKO", suffix: "%" },
+      { label: "Ledge Side Aerial Meteor", field: "ledgesideAerialMeteor", suffix: "%" }
+    ]
+  },
+  {
+    title: "Additional Data",
+    rows: [
+      { label: "Sombrero", field: "sombrero", suffix: "%" },
+      { label: "DAir Spike", field: "airNDown", suffix: "%" },
+      { label: "DAir Spike (Sour)", field: "airNWeakDown", suffix: "%" },
+      { label: "Up Throw Thunder", field: "upThrowThunder" },
+      { label: "Down Air Up Strong", field: "downAirUpStrong" },
+      { label: "Ledge Steal Pop Height", field: "ledgeSteal" },
+      { label: "Fastest Ledge Steal Inside", field: "fastestLedgeStealInside" },
+      { label: "Slowest Ledge Steal Inside", field: "slowestLedgeStealInside" },
+      { label: "Up Air Neutral Air", field: "upAirNeutralAir" }
+    ]
   }
+];
 
-  // Only include characters with data and explicitly type check
-  const characters = queries.map((q, i) => {
-    const data = q.data?.character;
+function normalizeValue(value: string | undefined): string {
+  return value === undefined || value === '' ? '-' : value;
+}
+
+function hasVariantDifferencesInSection(section: TableSection, characters: MatchedCharacterInfo[]): boolean {
+  if (characters.length <= 1) return true;
+  const baseChar = characters[0];
+  
+  const hasDiff = section.rows.some(row => {
+    const baseValue = normalizeValue(baseChar.data[row.field as keyof CharacterStats]);
+    const differences = characters.slice(1).some(char => {
+      const charValue = normalizeValue(char.data[row.field as keyof CharacterStats]);
+      const isDifferent = charValue !== baseValue && !(charValue === '-' && baseValue === '-');
+      return isDifferent;
+    });
+    return differences;
+  });
+  return hasDiff;
+}
+
+function CharacterMatchupData({ characterVariants }: { characterVariants: { name: string; variant?: string; displayName?: string }[] }) {
+  // Get data directly from the static JSON
+  const characters = characterVariants.map(char => {
+    // Try to get the variant-specific data
+    const data = getCharacterData(char.name, char.variant);
+    
+    if (!data) {
+      console.warn(`No data found for character: ${char.name}${char.variant ? ` (variant: ${char.variant})` : ''}`);
+      return null;
+    }
+    const uniqueKey = char.variant ? `${char.name}-${char.variant}` : char.name;
     return {
       data: data,
-      variant: characterVariants[i]
-    };
-  }).filter((c): c is { data: CharacterData, variant: CharacterVariant } => c.data !== undefined);
+      variant: {
+        name: char.name,
+        displayName: char.displayName || data.name,
+        variant: char.variant
+      },
+      key: uniqueKey
+    } as MatchedCharacterInfo;
+  }).filter((c): c is NonNullable<typeof c> => c !== null);
 
-  if (characters.length === 0) return <p>No data found for characters</p>;
+  if (characters.length === 0) {
+    console.error('No character data found for variants:', characterVariants);
+    return <p>No data found for characters</p>;
+  }
+
+  // At this point we know characters array is non-empty and has no null values
+  const safeCharacters = characters;
 
   return (
     <div className="matchup-data">
       <h2>Frame Data & Matchup Information</h2>
       <div className="data-section">
-        <h3>Clay Pigeon Data</h3>
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              {characters.length > 1 && <th>Variant</th>}
-              {characters.map(char => (
-                <th key={char.variant.name}>{char.variant.displayName || char.variant.name}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ground Clay Chain:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.groundCC || 'N/A'}</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Short Hop Clay Chain:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.shortHopCC || 'N/A'}</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Clay Standing:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.clayStanding || 'N/A'}</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Clay to Side Smash:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.clayToSideSmash || 'N/A'}</td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>KO Percents</h3>
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              {characters.length > 1 && <th>Variant</th>}
-              {characters.map(char => (
-                <th key={char.variant.name}>{char.variant.displayName || char.variant.name}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ledge Side Tilt KO:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.ledgeSideTiltKO}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Ledge Aerial KO:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.ledgeAirKO}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Up Smash KO:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.upSmashKO}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Ledge Side Smash KO:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.ledgeSideSmashKO}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Up Air Strong KO:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.upAirStrongKO}%</td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
-
-        <h3>Additional Data</h3>
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              {characters.length > 1 && <th>Variant</th>}
-              {characters.map(char => (
-                <th key={char.variant.name}>{char.variant.displayName || char.variant.name}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sombrero:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.sombrero}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>DAir Spike:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.airNDown}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>DAir Spike (Sour):</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.airNWeakDown}%</td>
-              ))}
-            </tr>
-            <tr>
-              <td>Ledge Steal Pop Height:</td>
-              {characters.map(char => (
-                <td key={char.variant.name}>{char.data.ledgeSteal}</td>
-              ))}
-            </tr>
-          </tbody>
-        </table>
+        {tableSections.map(section => {
+          return (
+            <div key={section.title}>
+              <h3>{section.title}</h3>
+              <table className="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Move</th>
+                    {safeCharacters.map(char => (
+                      <th key={char.key}>{char.variant.displayName}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.rows.map(row => {
+                    const baseValue = safeCharacters[0].data[row.field as keyof CharacterStats];
+                    const allIdentical = safeCharacters.slice(1).every(char => 
+                      char.data[row.field as keyof CharacterStats] === baseValue
+                    );
+                    return (
+                      <tr key={row.field}>
+                        <td>{row.label}:</td>
+                        {safeCharacters.map((char, index) => {
+                          const value = char.data[row.field as keyof CharacterStats];
+                          const isIdentical = index > 0 && value === baseValue;
+                          const displayValue = value === undefined || value === '' ? '-' : value;
+                          const showArrow = allIdentical && index > 0;
+                          return (
+                            <td 
+                              key={char.key} 
+                              className={isIdentical ? "text-muted" : ""}
+                              title={showArrow ? "Same as base value" : undefined}
+                            >
+                              <span className={showArrow ? "same-value-arrow" : ""}>
+                                {showArrow ? '←' : displayValue}
+                              </span>
+                              {!showArrow && displayValue !== '-' && row.suffix ? row.suffix : ''}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -188,9 +189,9 @@ function CharacterMatchupData({ characterVariants }: { characterVariants: Charac
 
 export default function ClientContent({ contentHtml, characterVariants }: ClientContentProps) {
   return (
-    <ApolloWrapper>
+    <>
       <CharacterMatchupData characterVariants={characterVariants} />
       <CharacterMatchupDescription contentHtml={contentHtml} />
-    </ApolloWrapper>
+    </>
   );
 }

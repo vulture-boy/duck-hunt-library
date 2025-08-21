@@ -2,10 +2,10 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Hero (Normal)", displayName: "Normal" },
-    { name: "Hero (Psych Up)", displayName: "Psych Up" },
-    { name: "Hero (Oomph)", displayName: "Oomph" },
-    { name: "Hero (Acceleratle)", displayName: "Acceleratle" }
+    { name: "hero", variant: "normal", displayName: "Normal" },
+    { name: "hero", variant: "psyche-up", displayName: "Psych Up" },
+    { name: "hero", variant: "oomph", displayName: "Oomph" },
+    { name: "hero", variant: "psyche-up-oomph", displayName: "Psych Up + Oomph" }
   ],
   matchupNumber: "072",
   contentId: "072-hero",

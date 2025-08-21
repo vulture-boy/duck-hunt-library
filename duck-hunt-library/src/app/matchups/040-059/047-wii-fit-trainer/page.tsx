@@ -2,12 +2,11 @@ import MatchupPage from '../../components/matchup-page'
 
 const matchupInfo = {
   characterVariants: [
-    { name: "Wii Fit Trainer (Normal)", displayName: "Normal" },
-    { name: "Wii Fit Trainer (Deep Breathing)", displayName: "Deep Breathing" }
+    { name: "wii-fit-trainer", variant: "normal", displayName: "Normal" },
+    { name: "wii-fit-trainer", variant: "deep-breathing", displayName: "Deep Breathing" }
   ],
   matchupNumber: "047",
-  contentId: "047-wii-fit-trainer",
-  pageDisplayName: "Wii Fit Trainer"
+  contentId: "047-wii-fit-trainer"
 }
 
 export default function Page() {
