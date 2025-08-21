@@ -1,7 +1,7 @@
 # duck-hunt-ssbu
 Repository of information on the playable character Duck Hunt in Super Smash Bros. Ultimate, presented for web.
 
-Created and Edited by vulture-boy (Tyson Moll).
+Created and Edited by vulture-boy (Tyson Moll). Additional credits listed on their respective pages. Some matchup data sourced from the included CSV.
 
 This is a non-for-profit resource for educational purposes; all original data and code hosted is licensed under the GNU General Public License 3.0 and hosted resources are under ownership of their respective license owners. This site is not sponsored nor endorsed by Nintendo.
 
