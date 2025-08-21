@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# duck-hunt-ssbu
+Repository of information on the playable character Duck Hunt in Super Smash Bros. Ultimate, presented for web.
 
-## Getting Started
+Created and Edited by vulture-boy (Tyson Moll).
 
-First, run the development server:
+This is a non-for-profit resource for educational purposes; all original data and code hosted is licensed under the GNU General Public License 3.0 and hosted resources are under ownership of their respective license owners. This site is not sponsored nor endorsed by Nintendo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Data and advice on the site has been collected with support from members of the SSBU community. This is a non-for-profit resource; all original data and code hosted is licensed under the GNU General Public License 3.0 and other hosted resources are under ownership of their respective license owners. When possible, the source of any information will be provided and if you wish to license information collected from the site, the expectation is to negotiate with the source of data, the license holders, or Nintendo; information on the site is solely for educational purposes and is not sponsored nor endorsed by Nintendo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Duck Hunt SSBU Discord: https://discord.gg/JsNVqT3nWp
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Minor technical contibutions or data improvements can be made via GitHub pull requests. Major changes can be requested but are ultimately managed by team members.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to contribute
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- You can add matchup metric data about characters to the characters.json file and update character-matchup.tsx to display the data.
+- You can update the markdown files in the content folder to help adjust page writeups. These get built before deployment as HTML files.
