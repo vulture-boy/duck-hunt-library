@@ -13,6 +13,14 @@ const majorMonoDisplay = Major_Mono_Display({
 export const metadata: Metadata = {
   title: "duck hunt library",
   description: "a SSBU documentation for Duck Hunt players",
+  icons: {
+    icon: [
+      {
+        url: '/favicon.ico',
+        sizes: 'any',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

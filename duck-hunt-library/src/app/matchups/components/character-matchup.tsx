@@ -80,26 +80,6 @@ const tableSections: TableSection[] = [
   }
 ];
 
-function normalizeValue(value: string | undefined): string {
-  return value === undefined || value === '' ? '-' : value;
-}
-
-function hasVariantDifferencesInSection(section: TableSection, characters: MatchedCharacterInfo[]): boolean {
-  if (characters.length <= 1) return true;
-  const baseChar = characters[0];
-  
-  const hasDiff = section.rows.some(row => {
-    const baseValue = normalizeValue(baseChar.data[row.field as keyof CharacterStats]);
-    const differences = characters.slice(1).some(char => {
-      const charValue = normalizeValue(char.data[row.field as keyof CharacterStats]);
-      const isDifferent = charValue !== baseValue && !(charValue === '-' && baseValue === '-');
-      return isDifferent;
-    });
-    return differences;
-  });
-  return hasDiff;
-}
-
 function CharacterMatchupData({ characterVariants }: { characterVariants: { name: string; variant?: string; displayName?: string }[] }) {
   // Get data directly from the static JSON
   const characters = characterVariants.map(char => {

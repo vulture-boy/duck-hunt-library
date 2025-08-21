@@ -2,9 +2,12 @@
 	"name": "duck-hunt-library",
 	"version": "0.1.0",
 	"private": true,
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "tsx scripts/build-static-content.ts && next build",
 		"start": "next start",
 		"lint": "next lint",
 		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
@@ -12,9 +15,10 @@
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
 	},
 	"dependencies": {
-		"@opennextjs/cloudflare": "^1.2.1",
+		"@opennextjs/cloudflare": "^1.6.5",
 		"gray-matter": "^4.0.3",
 		"next": "15.3.3",
+		"open-next": "^0.0.1",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"remark": "^15.0.1",
@@ -22,13 +26,18 @@
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "^3",
+		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^20.19.11",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"cross-env": "^10.0.0",
 		"eslint": "^9",
 		"eslint-config-next": "15.3.3",
+		"fs-extra": "^11.3.1",
+		"raw-loader": "^4.0.2",
 		"ts-node": "^10.9.2",
 		"ts-node-dev": "^2.0.0",
+		"tsx": "^4.20.4",
 		"typescript": "^5.9.2",
 		"wrangler": "^4.19.1"
 	}

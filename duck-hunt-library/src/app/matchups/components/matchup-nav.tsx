@@ -9,14 +9,15 @@ export interface MatchupNavProps {
     previousMatchup: MatchupReference | null;
     nextMatchup: MatchupReference | null;
     title: string;
+    showPrevious?: boolean;
 }
 
-export default function MatchupNav({ previousMatchup, nextMatchup, title }: MatchupNavProps) {
+export default function MatchupNav({ previousMatchup, nextMatchup, title, showPrevious = true }: MatchupNavProps) {
     const router = useRouter();
 
     useEffect(() => {
         function handleKeyDown(event: KeyboardEvent) {
-            if (event.key === 'ArrowLeft' && previousMatchup) {
+            if (event.key === 'ArrowLeft' && previousMatchup && showPrevious) {
                 router.push(`/matchups/${previousMatchup.path}`);
             } else if (event.key === 'ArrowRight' && nextMatchup) {
                 router.push(`/matchups/${nextMatchup.path}`);
@@ -25,11 +26,11 @@ export default function MatchupNav({ previousMatchup, nextMatchup, title }: Matc
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [previousMatchup, nextMatchup, router]);
+    }, [previousMatchup, nextMatchup, router, showPrevious]);
 
     return (
         <div className="matchup-header">
-            {previousMatchup && (
+            {previousMatchup && showPrevious && (
                 <Link 
                     href={`/matchups/${previousMatchup.path}`}
                     className="nav-arrow"

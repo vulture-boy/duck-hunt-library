@@ -19,11 +19,11 @@ export default function Menubar() {
             </button>
             <div className="collapse hide" id="general-collapse">
                 <LinkList pairs={[
-                    new LinkTitlePairClass("_primer", "/general/primer.html"),
-                    new LinkTitlePairClass("_about", "/general/about.html"),
-                    new LinkTitlePairClass("_glossary", "/general/glossary.html"),
-                    new LinkTitlePairClass("_update_history", "/general/update-history.html"),
-                    new LinkTitlePairClass("_records", "/general/records.html"),
+                    new LinkTitlePairClass("_primer", "/general/primer"),
+                    new LinkTitlePairClass("_about", "/general/about"),
+                    new LinkTitlePairClass("_glossary", "/general/glossary"),
+                    new LinkTitlePairClass("_update_history", "/general/update-history"),
+                    new LinkTitlePairClass("_records", "/general/records"),
                 ]} />
             </div>
             <button className="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#technique-collapse" aria-expanded="false">
@@ -31,18 +31,18 @@ export default function Menubar() {
             </button>
             <div className="collapse hide" id="technique-collapse">
                 <LinkList pairs={[
-                    new LinkTitlePairClass("_ssbu_fundamentals", "/technique/ssbu-fundamentals.html"),
-                    new LinkTitlePairClass("_moveset", "/technique/moveset.html"),
-                    new LinkTitlePairClass("_movement", "/technique/movement.html"),
-                    new LinkTitlePairClass("_normals", "/technique/normals.html"),
-                    new LinkTitlePairClass("_trick_shot", "/technique/trick-shot.html"),
-                    new LinkTitlePairClass("_clay_shooting", "/technique/clay-shooting.html"),
-                    new LinkTitlePairClass("_wild_gunman", "/technique/wild-gunman.html"),
-                    new LinkTitlePairClass("_ledge_guarding", "/technique/ledge-guarding.html"),
-                    new LinkTitlePairClass("_recovery", "/technique/recovery.html"),
-                    new LinkTitlePairClass("_knockback_storage", "/technique/knockback-storage.html"),
-                    new LinkTitlePairClass("_canicide", "/technique/canicide.html"),
-                    new LinkTitlePairClass("_glitch_tech", "/technique/glitches.html"),
+                    new LinkTitlePairClass("_ssbu_fundamentals", "/technique/ssbu-fundamentals"),
+                    new LinkTitlePairClass("_moveset", "/technique/moveset"),
+                    new LinkTitlePairClass("_movement", "/technique/movement"),
+                    new LinkTitlePairClass("_normals", "/technique/normals"),
+                    new LinkTitlePairClass("_trick_shot", "/technique/trick-shot"),
+                    new LinkTitlePairClass("_clay_shooting", "/technique/clay-shooting"),
+                    new LinkTitlePairClass("_wild_gunman", "/technique/wild-gunman"),
+                    new LinkTitlePairClass("_ledge_guarding", "/technique/ledge-guarding"),
+                    new LinkTitlePairClass("_recovery", "/technique/recovery"),
+                    new LinkTitlePairClass("_knockback_storage", "/technique/knockback-storage"),
+                    new LinkTitlePairClass("_canicide", "/technique/canicide"),
+                    new LinkTitlePairClass("_glitch_tech", "/technique/glitches"),
                 ]} />
             </div>
             <button className="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#articles-collapse" aria-expanded="false">
@@ -50,7 +50,7 @@ export default function Menubar() {
             </button>
             <div className="collapse hide" id="articles-collapse">
                 <LinkList pairs={[
-                    new LinkTitlePairClass("_stage_selection", "/articles/stage-selection.html"),
+                    new LinkTitlePairClass("_stage_selection", "/articles/stage-selection"),
                 ]} />
             </div>
             <button className="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#matchups-collapse" aria-expanded="false">

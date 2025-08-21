@@ -2,32 +2,44 @@
 
 # dependencies
 node_modules/
-/node_modules
-/.pnp
+.pnp
 .pnp.js
 .yarn/install-state.gz
 
 # testing
-/coverage
+coverage/
 
 # next.js
-/.next/
-/out/
+.next/
+out/
 
 # production
-/build
+build/
+.open-next/
+.wrangler/
+
+# environment
+.env*.local
+.dev.vars
+/dist
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
 .env*.local
+.env
+.env.development
+.env.test
+.env.production
 
 # vercel
 .vercel
@@ -36,9 +48,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# OpenNext
+# OpenNext and Cloudflare
 /.open-next
-
-# wrangler files
+.open-next
+/.wrangler
 .wrangler
 .dev.vars*
+/worker-configuration.d.ts
+.cloudflare
+
+# Build artifacts
+public/content/matchups/
+.next/static/markdown/
+.open-next/assets/content/

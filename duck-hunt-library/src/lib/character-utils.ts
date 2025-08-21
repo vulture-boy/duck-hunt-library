@@ -1,4 +1,4 @@
-import characterData from '../data/characters.json' assert { type: 'json' };
+import characterData from '../data/characters.json';
 
 // Types for the imported JSON data
 type CharacterDataJson = Record<string, CharacterData>;

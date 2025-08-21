@@ -49,6 +49,7 @@ export default async function MatchupPage({ matchupInfo }: { matchupInfo: Matchu
               previousMatchup={getPreviousMatchup(matchupInfo.matchupNumber)}
               nextMatchup={getNextMatchup(matchupInfo.matchupNumber)}
               title={`Matchups #${matchupInfo.matchupNumber}: ${matchupInfo.pageDisplayName || matchupInfo.characterVariants.map(v => v.displayName || v.name).join(' & ')}`}
+              showPrevious={matchupInfo.matchupNumber !== "001"}
             />
             <hr/>
             {content}

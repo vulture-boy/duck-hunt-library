@@ -1,7 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone',
+  distDir: '.next',
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.md$/,
+      type: 'asset/source',
+    });
+    return config;
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/content/:path*',
+        destination: '/api/content/:path*'
+      }
+    ];
+  }
 };
 
 export default nextConfig;

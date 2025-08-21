@@ -6,7 +6,8 @@ const matchupInfo = {
     { name: "wii-fit-trainer", variant: "deep-breathing", displayName: "Deep Breathing" }
   ],
   matchupNumber: "047",
-  contentId: "047-wii-fit-trainer"
+  contentId: "047-wii-fit-trainer",
+  pageDisplayName: "Wii Fit Trainer"
 }
 
 export default function Page() {

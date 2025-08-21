@@ -1,33 +1,53 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
+import { fetchContent } from './content-api';
+import { processMarkdownToHtml } from './static-markdown';
+
+export async function getGenericMarkdownContent(id: string) {
+  try {
+    // In production, use pre-built content from the generated map
+    if (process.env.NODE_ENV === 'production') {
+      const { getStaticContent } = await import('../generated/content-map');
+      try {
+        const contentHtml = getStaticContent(id);
+        console.log(`Loaded static content for ${id}, length: ${contentHtml.length}`);
+        return { contentHtml };
+      } catch (error) {
+        console.error(`Error loading static content for ${id}:`, error);
+        throw error;
+      }
+    }
+
+    // In development, process markdown on-the-fly
+    const rawContent = await fetchContent(id);
+    const contentHtml = await processMarkdownToHtml(rawContent);
+    return { contentHtml };
+  } catch (error) {
+    console.error(`Error processing markdown for ${id}:`, error);
+    throw error;
+  }
+}
 
 export async function getMatchupMarkdownContent(id: string) {
   try {
-    const matchupsDirectory = path.join(process.cwd(), 'public/content/matchups');
-    const fullPath = path.join(matchupsDirectory, `${id}.md`);
-
-    if (!fs.existsSync(fullPath)) {
-      throw new Error(`File not found: ${id}.md`);
+    // In production, use pre-built content from the generated map
+    if (process.env.NODE_ENV === 'production') {
+      const { getStaticContent } = await import('../generated/content-map');
+      try {
+        const contentHtml = getStaticContent(id);
+        console.log(`Loaded static content for ${id}, length: ${contentHtml.length}`);
+        return { contentHtml };
+      } catch (error) {
+        console.error(`Error loading static content for ${id}:`, error);
+        throw error;
+      }
     }
 
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const { content } = matter(fileContents);
+    // In development, process markdown on-the-fly
+    const rawContent = await fetchContent(id);
+    console.log(`File contents length: ${rawContent.length}`);
+    const contentHtml = await processMarkdownToHtml(rawContent);
+    console.log(`Final HTML length: ${contentHtml.length}`);
 
-    // Convert markdown into HTML string
-    const processedContent = await remark()
-      .use(html, { 
-        sanitize: false  // Don't sanitize to preserve formatting
-      })
-      .process(content);
-    
-    const contentHtml = processedContent.toString();
-
-    return {
-      contentHtml
-    };
+    return { contentHtml };
   } catch (error) {
     console.error('Error loading matchup markdown:', error);
     throw error;

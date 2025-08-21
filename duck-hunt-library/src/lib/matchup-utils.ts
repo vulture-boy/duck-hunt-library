@@ -1,40 +1,27 @@
-interface MatchupResponse {
-  contentHtml: string;
-  error?: string;
-}
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+import { promises as fs } from 'fs';
+import path from 'path';
 
 export async function getMatchupContent(id: string) {
   try {
     // For debugging
-    console.log(`Fetching matchup content for id: ${id}`);
+    console.log(`Getting matchup content for id: ${id}`);
     
-    // Get the base URL from the window location in the browser
-    // or default to http://localhost:3000 for server-side rendering
-    const baseUrl = typeof window !== 'undefined' 
-      ? window.location.origin 
-      : 'http://localhost:3000';
+    // Read markdown file directly
+    const filePath = path.join(process.cwd(), 'content', 'matchups', `${id}.md`);
+    const fileContents = await fs.readFile(filePath, 'utf8');
     
-    const response = await fetch(`${baseUrl}/api/matchups?id=${encodeURIComponent(id)}`);
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error(`API response not OK: ${response.status} ${response.statusText}`, errorText);
-      throw new Error(`Failed to fetch matchup content: ${response.statusText}`);
-    }
-    
-    const data = await response.json() as MatchupResponse;
-    if (data.error) {
-      console.error('API returned error:', data.error);
-      throw new Error(data.error);
-    }
-
-    if (!data.contentHtml) {
-      console.error('API response missing contentHtml:', data);
-      throw new Error('Invalid API response format');
-    }
+    // Parse markdown
+    const matterResult = matter(fileContents);
+    const processedContent = await remark()
+      .use(html)
+      .process(matterResult.content);
+    const contentHtml = processedContent.toString();
 
     return {
-      contentHtml: data.contentHtml
+      contentHtml
     };
   } catch (error) {
     console.error('Error loading matchup content:', error);
