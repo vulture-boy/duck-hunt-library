@@ -1,24 +1,19 @@
 import { NextRequest } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { contentMap } from '@/generated/content-map';
 
 export async function GET(request: NextRequest) {
   try {
-    // Extract the filename from the URL path
+    // Extract the contentId from the URL path
     const pathname = request.nextUrl.pathname;
-    const filename = pathname.split('/').pop() || '';
+    const contentId = pathname.split('/').pop() || '';
 
-    // Find the correct directory for the content
-    const contentDir = path.join(process.cwd(), 'content/matchups');
-    const filePath = path.join(contentDir, filename);
-
-    // Read the file
-    if (!fs.existsSync(filePath)) {
-      console.error(`File not found: ${filePath}`);
+    // Get the content from the content map
+    if (!contentMap[contentId]) {
+      console.error(`Content not found for ID: ${contentId}`);
       return new Response('Not Found', { status: 404 });
     }
 
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = contentMap[contentId];
     
     return new Response(content, {
       headers: {

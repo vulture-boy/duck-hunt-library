@@ -1,14 +1,23 @@
 import { fetchContent } from './content-api';
 import { processMarkdownToHtml } from './static-markdown';
 
+import { contentMap } from '../generated/content-map';
+
+function getStaticContentSync(id: string): string {
+  const content = contentMap[id];
+  if (!content) {
+    throw new Error(`Content not found for ${id}`);
+  }
+  console.log(`Loaded static content for ${id}, length: ${content.length}`);
+  return content;
+}
+
 export async function getGenericMarkdownContent(id: string) {
   try {
     // In production, use pre-built content from the generated map
     if (process.env.NODE_ENV === 'production') {
-      const { getStaticContent } = await import('../generated/content-map');
       try {
-        const contentHtml = getStaticContent(id);
-        console.log(`Loaded static content for ${id}, length: ${contentHtml.length}`);
+        const contentHtml = getStaticContentSync(id);
         return { contentHtml };
       } catch (error) {
         console.error(`Error loading static content for ${id}:`, error);
@@ -30,10 +39,8 @@ export async function getMatchupMarkdownContent(id: string) {
   try {
     // In production, use pre-built content from the generated map
     if (process.env.NODE_ENV === 'production') {
-      const { getStaticContent } = await import('../generated/content-map');
       try {
-        const contentHtml = getStaticContent(id);
-        console.log(`Loaded static content for ${id}, length: ${contentHtml.length}`);
+        const contentHtml = getStaticContentSync(id);
         return { contentHtml };
       } catch (error) {
         console.error(`Error loading static content for ${id}:`, error);

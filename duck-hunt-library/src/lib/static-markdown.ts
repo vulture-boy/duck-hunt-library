@@ -7,7 +7,8 @@ import html from 'remark-html';
 const contentDirectories = [
   path.join(process.cwd(), 'content/matchups'),
   path.join(process.cwd(), 'content/technique'),
-  path.join(process.cwd(), 'content/general')
+  path.join(process.cwd(), 'content/general'),
+  path.join(process.cwd(), 'content/articles')
 ];
 const outputDirectory = path.join(process.cwd(), 'src/generated');
 
