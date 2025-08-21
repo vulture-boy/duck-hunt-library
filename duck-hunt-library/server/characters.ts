@@ -1802,7 +1802,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     id: "57.1",
-    name: "Shulk (翔 Jump)",
+    name: "Shulk (Jump)",
     groundCC: "49-70",
     shortHopCC: "-",
     clayCC: "",
@@ -1827,7 +1827,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     id: "57.2",
-    name: "Shulk (疾 Speed)",
+    name: "Shulk (Speed)",
     groundCC: "-",
     shortHopCC: "43-75",
     clayCC: "",
@@ -1852,7 +1852,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     id: "57.3",
-    name: "Shulk (盾 Shield)",
+    name: "Shulk (Shield)",
     groundCC: "-",
     shortHopCC: "-",
     clayCC: "-",
@@ -1877,7 +1877,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     id: "57.4",
-    name: "Shulk (斬 Buster)",
+    name: "Shulk (Buster)",
     groundCC: "-",
     shortHopCC: "41-75",
     clayCC: "",
@@ -1902,7 +1902,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     id: "57.5",
-    name: "Shulk (撃 Smash)",
+    name: "Shulk (Smash)",
     groundCC: "-",
     shortHopCC: "9-37",
     clayCC: "",

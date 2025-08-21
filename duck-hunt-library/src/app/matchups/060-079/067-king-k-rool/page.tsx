@@ -1,0 +1,13 @@
+import MatchupPage from '../../components/matchup-page'
+
+const matchupInfo = {
+  characterVariants: [
+    { name: "King K. Rool" }
+  ],
+  matchupNumber: "067",
+  contentId: "067-king-k-rool"
+}
+
+export default function Page() {
+  return <MatchupPage matchupInfo={matchupInfo} />
+}

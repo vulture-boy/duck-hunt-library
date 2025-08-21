@@ -50,8 +50,8 @@ main {
 }
 .btn-toggle:hover,
 .btn-toggle:focus {
-  color: rgba(0, 0, 0, .85);
-  background-color: #303233;
+  color: #e6e6de;
+  background-color: #4a4544;
   box-shadow: none;
 }
 
@@ -79,7 +79,8 @@ main {
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: #e4e4e4;
+  background-color: #4a4544;
+  color: #e6e6de;
 }
 
 .scrollarea {

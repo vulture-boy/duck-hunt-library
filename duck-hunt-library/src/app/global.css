@@ -5,13 +5,13 @@ body {
 }
 
 footer {
-    font-family: sans-serif;
+    font-family: 'urbanist', sans-serif;
     text-align: center;
     font-size: xx-small;
     background-color: #3c3a39;
-    position: fixed;
-    bottom:0;
-    right:0
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
 }
 
 hr {
@@ -37,9 +37,26 @@ ul {
     font-size: 1em;
 }
 
+/* Basic styles for nested lists */
+.matchup-description ul ul {
+    margin-left: 2em;
+}
+
 #menuBar {
     font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
     width: 280px;
+    font-size: 0.9rem;
+}
+
+#titleName {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #e6e6de;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: block;
 }
 
 #galleryDescriptorHeader {
@@ -54,4 +71,50 @@ ul {
 
 a:link, a:visited {
     color: #cacab6;
+}
+
+/* Table styles */
+.table.table-striped {
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.table.table-striped th {
+    background-color: #9d948a !important;
+    color: #d4d4cb !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-bottom: 2px solid #6c6760;
+}
+
+.table.table-striped td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #7e7875;
+    background-color: #686762 !important;
+    color: #bcbcb5 !important;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) td {
+    background-color: #797773 !important;
+}
+
+.data-section h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #e6e6de;
+}
+
+/* Only main page and section headings use Major Mono Display */
+h1, h2, h3 {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
+}
+
+/* Other headings use regular font */
+h4, h5, h6 {
+    font-family: 'urbanist', sans-serif;
 }
