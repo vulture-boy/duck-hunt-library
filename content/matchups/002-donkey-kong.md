@@ -1,4 +1,8 @@
-# Matchups #02: Donkey Kong
+## Summary
+
+The Donkey Kong matchup is generally considered favourable, yet volatile for Duck Hunt.
+
+While Duck Hunt's stage control and turtling is in peak form against the heavyweight gorilla, it takes very few openings for Donkey Kong to setup a reversal situation into his dominant advantage state and variety of kill confirms.
 
 ---
 
@@ -10,12 +14,6 @@
 [Donkey Kong Character Discord](https://discord.com/invite/qMzMf8g)
 
 ---
-
-## Summary
-
-The Donkey Kong matchup is generally considered favourable, yet volatile for Duck Hunt.
-
-While Duck Hunt's stage control and turtling is in peak form against the heavyweight gorilla, it takes very few openings for Donkey Kong to setup a reversal situation into his dominant advantage state and variety of kill confirms.
 
 ## Counterplay
 
