@@ -1209,7 +1209,7 @@
     "variants": {
       "0": {
         "name": "Lucario (0%)",
-        "groundCC": "39-72",
+        "groundCC": "",
         "shortHopCC": "39-72",
         "clayCC": "",
         "clayStanding": "72",
@@ -1233,7 +1233,7 @@
       },
       "65": {
         "name": "Lucario (65%)",
-        "groundCC": "39-72",
+        "groundCC": "",
         "shortHopCC": "39-72",
         "clayCC": "",
         "clayStanding": "72",
@@ -1257,7 +1257,7 @@
       },
       "190": {
         "name": "Lucario (190%)",
-        "groundCC": "39-72",
+        "groundCC": "",
         "shortHopCC": "39-72",
         "clayCC": "",
         "clayStanding": "72",
@@ -1283,7 +1283,7 @@
   },
   "rob": {
     "name": "R.O.B.",
-    "groundCC": "43-79",
+    "groundCC": "",
     "shortHopCC": "43-79",
     "clayCC": "",
     "clayStanding": "79",
