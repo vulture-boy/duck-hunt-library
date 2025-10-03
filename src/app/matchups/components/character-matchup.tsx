@@ -45,10 +45,10 @@ const tableSections: TableSection[] = [
   {
     title: "Clay Pigeon Data",
     rows: [
-      { label: "Ground Clay Chain", field: "groundCC" },
-      { label: "Short Hop Clay Chain", field: "shortHopCC" },
-      { label: "Clay Chain", field: "clayCC" },
-      { label: "Clay Standing", field: "clayStanding" },
+      { label: "Grounded CC", field: "groundCC" },
+      { label: "Short Hop CC", field: "shortHopCC" },
+      // { label: "CCC", field: "clayCC" },  // esoteric
+      { label: "C Tumble Limit", field: "clayStanding" },
       { label: "Clay to Side Smash", field: "clayToSideSmash" },
       { label: "CC to Side Smash", field: "ccToSideSmash" }
     ]
@@ -56,26 +56,27 @@ const tableSections: TableSection[] = [
   {
     title: "KO Percents",
     rows: [
-      { label: "Ledge Side Tilt KO", field: "ledgeSideTiltKO", suffix: "%" },
-      { label: "Ledge Aerial KO", field: "ledgeAirKO", suffix: "%" },
-      { label: "Up Smash KO", field: "upSmashKO", suffix: "%" },
-      { label: "Ledge Side Smash KO", field: "ledgeSideSmashKO", suffix: "%" },
+      { label: "Ledge FTilt KO", field: "ledgeSideTiltKO", suffix: "%" },
+      { label: "Ledge BAir KO", field: "ledgeAirKO", suffix: "%" },
+      { label: "USmash KO", field: "upSmashKO", suffix: "%" },
+      { label: "Ledge SSmash KO", field: "ledgeSideSmashKO", suffix: "%" },
       { label: "Up Air Strong KO", field: "upAirStrongKO", suffix: "%" },
-      { label: "Ledge Side Aerial Meteor", field: "ledgesideAerialMeteor", suffix: "%" }
+      { label: "Ledgeside Aerial Meteor", field: "ledgesideAerialMeteor", suffix: "%" },
+      { label: "Sombrero KO", field: "sombrero", suffix: "%" }
     ]
   },
   {
     title: "Additional Data",
     rows: [
-      { label: "Sombrero", field: "sombrero", suffix: "%" },
-      { label: "DAir Spike", field: "airNDown", suffix: "%" },
-      { label: "DAir Spike (Sour)", field: "airNWeakDown", suffix: "%" },
-      { label: "Up Throw Thunder", field: "upThrowThunder" },
-      { label: "Down Air Up Strong", field: "downAirUpStrong" },
+      { label: "NAir Tumble %", field: "airNDown", suffix: "%" },
+      { label: "NAir Tumble % (Weak)", field: "airNWeakDown", suffix: "%" },
+      { label: "Up Throw KO", field: "upThrowThunder" },
+      { label: "DAir UpSmash", field: "downAirUpStrong" },
       { label: "Ledge Steal Pop Height", field: "ledgeSteal" },
-      { label: "Fastest Ledge Steal Inside", field: "fastestLedgeStealInside" },
-      { label: "Slowest Ledge Steal Inside", field: "slowestLedgeStealInside" },
-      { label: "Up Air Neutral Air", field: "upAirNeutralAir" }
+      // The following are esoteric and need translation confirmation...
+      // { label: "Fastest Ledge Steal Inside", field: "fastestLedgeStealInside" },
+      // { label: "Slowest Ledge Steal Inside", field: "slowestLedgeStealInside" },
+      // { label: "Up Air Neutral Air", field: "upAirNeutralAir" }
     ]
   }
 ];
