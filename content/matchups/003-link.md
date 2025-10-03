@@ -83,7 +83,6 @@
 ### Combo Windows
 
 **Duck Hunt Combo Windows**
-- Pre-Tumble CP Loops: Shorthop 45% -> 79% Max [[link]](https://docs.google.com/spreadsheets/d/1DVdmKkSD33fJ-Iz9DO0Pyiv4Q6gVXA9DcUoD1uZTKX8/edit?gid=0)
 - Very Hard to Dragdown UpAir -> UpTilt / UpSmash. Inconsistent (need back hit). [[link]](https://docs.google.com/spreadsheets/d/1TaQLYoPKJ6rVN3Uk-VucRwV9jwKXFCB2VywxqzCNU1Y/edit?gid=0)
 - CP -> fullhop BAir at ~120% [need to verify ranges & details]
 
