@@ -15,6 +15,7 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - [King Dedede's OOS options](https://www.outofshield.com/character?Character=King+Dedede)
 - [SmashTube Query for Duck Hunt vs. King Dedede](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%87%E3%83%87%E3%83%87&free_word=&region=&submit=#result)
 - [King Dedede Character Discord](https://discord.com/invite/fccCz2G)
+- [Landslide's Dedede Tech Doc](https://docs.google.com/document/d/1-7gQlYPTLPVon48VIXpL0J1wVknZgo0HeWdQMHcLEfc/edit?tab=t.0#heading=h.ga2su2ujd7aj)
 
 ---
 
@@ -31,15 +32,18 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - A major priority for King Dedede is to get in on Duck Hunt as at midrange and beyond, Duck Hunt's projectiles make for great initiation and chaining tools.
 - SHFF Nair is effective for Dedede as a means to cover horizontal distance at midrange with a protective hurtbox.
 - As a command grab, Inhale is used to condition opponents that shield or abuse projectiles vs Dedede. After being spit out, Dedede has a few follow up options that he can use to improve its reward, generally creating advantage state. It has 74f of lag on whiff. His head is vulnerable at this time.
+- Inhale grabs at f17-19, windbox begins at f20
 - Respect BAir (-7) on block and don't jump to punish it afterwards. 
 - If shielding Dedede's jab, when DHD is only being hit by the stub outside the barrel of Dedede's hammer, releasing shield can result into a parry (or leave DHD outside of Jab's range). You can use this opportunity to punish with a CP. [[demo by embo_z]](https://youtu.be/5S3_aUfC5fI?feature=shared&t=198)
 - UTilt has decent shield pushback but is -21 on shield. [probably can be low profiled by Low Duck moves like DTilt.]
+- DA: Dedede's DA goes over DHD's Jab 1, DTilt, Grab, Dash Grab, a motionless Can, and Clay Pigeon from Close/Far range [[Demo by Landslide]](https://youtu.be/Hb1JkGnn3VU?si=WXGzTIW3Z0BWMYUH&t=173)
 - DHD's DTilt is safe from all of Dedede's OOS options.
 - DTilt: can upsmash it OOS.
 - DThrow: Reactable, DI Away.
 - USmash: -40 on shield; hard punish.
 - Unsurprisingly, Dedede struggles to escape when cornered.
 - Dedede has large tech rolls (but he's still huge)
+- UpB / Super Dedede Jump height video [[link]](https://youtu.be/QetrQe7PpLY)
 
 ### Advantage
 
@@ -75,8 +79,9 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - Dedede's Uptilt
 
 #### On Ledge
-
-- Dedede can use combinations of Jet Hammer/Inhale/Normals and Gordo when ledgetrapping. He will usually pick Jet Hammer if he has the time, otherwise Gordo or just neutrals.
+- Dedede can use combinations of Jet Hammer/Inhale/Normals and Gordo when ledgetrapping. He will usually pick Jet Hammer if he can't get optimal spacing for the angled Gordo.
+- Dedede's Dash Attack is an effective 2-frame tool vs DHD (DTilt not so much)
+- Gordo bounces best for ledge coverage at about roll distance (3 training stage units) using the 'CUP' (C-Stick UP) angle, which also frees Dedede to cover with normals safely: all grounded ledge options are unsafe during this time. If you avoid the gordo, you can still be sent into the gordo if it's behind you [[see video demo on CUP Gordo ledge coverage]](https://www.youtube.com/watch?v=FzyFWQ1UnOA).
 
 ##### Jet Hammer
 - Jet Hammer is a very powerful tool on ledge
@@ -95,7 +100,14 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 [TBA]
 
 #### Opponent Combo Windows
-[TBA]
+- 0tD off shield breaks
+- (most) Gordo -> misc. (~0-45% on midweights)
+- Slow Gordo -> DThrow -> UAir / BAir (0-30% / 0-20% on Mario)
+- Most Gordo Followups
+- NAir -> UAir ('UpDog') 105-135% (+5% BattleField / Kalos, +3% Smashville / T&C) [[src]](https://xcancel.com/UltD3Cord/status/1292638612044091394)
+- NAir (Weak) -> SH NAir (Weak) 55-64% [[src]](https://docs.google.com/document/d/12o0KrW8uGFG1xtFxS6MITiWKkWIwCXKOazvNq2LFcXI/edit?tab=t.0)
+- NAir (Weak) -> FH NAir (Weak) 75-90% [[src]](https://docs.google.com/document/d/12o0KrW8uGFG1xtFxS6MITiWKkWIwCXKOazvNq2LFcXI/edit?tab=t.0)
+- 
 
 ### Other
 
@@ -112,11 +124,21 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 
 #### Dedede's Gordo
 - 29f startup, 59FAF
+- Only Jab 1, Jab 2, Rapid Jab, the ping reticle, the first clay pigeon explosion, and the physical bodies of Can and Clay Pigeon fail to deflect Gordo [[src]](https://docs.google.com/spreadsheets/d/10bto4XEbUSvc_TVq0l3KQv2zNaDp0jkdJTPhpG1zMaE/edit?gid=919474439#gid=919474439)
 - Becomes weaker the longer it's out.
+- Can be 'caught' and sent out again with the Gordo spawn input (faster than inhale)
 - It is programmed to travel towards Dedede when hit.
-- Can be angled to be slow and vertical or fast and forward
+- Can be angled to be slow and vertical or fast and forward. C-Stick ranges are detailed in [this video](https://www.youtube.com/watch?v=FzyFWQ1UnOA) and [this doc](https://docs.google.com/document/d/1EIuAPYeCVWFTlT8vRFlskCzLQwEFTqB5KC8DOGGRLA4/edit?tab=t.0), including C-Stick modified angles like 'CUP' (C stick UP) that cover ledge well and slip the ledge lip reliably.
+- An optimal spacing for Gordo bounces such that it 
+- Gordo hitlag can bounce into a character a second time if it hits them at a particular position in their hurtbox such that it moves and is still in their hurtbox when it reactivates.
+- Inhale can be used off Gordo Hitlag (unstale deals 30.8%)
 - If up close, you can simply hit Dedede with a burst option underneath [DA? Confirm which moves are useful here].
 - Has a 50%[?] chance of ledge sticking when the ledgetrap setup is used.
+- Gordo can be used as a grab break to extend into combos at near-0 percents, but these combos can rack anywhere between 30 to 60%
+- Dedede can grab an opponent from the hitlag of Gordo at early% and can sometimes be followed up with DThrow -> Fair for additional damage.
+- Reverse NAir, Tomahawk BThrow, and some aerial hammers can send opponents into Gordo after deployment
+- There are a variety of Gordo kill confirm ladders effective at 0, generally off a shield break due to their complexity. They tend to ladder diagonally, though two of the easiest setups lead into Super Dedede Jump (armor properties) and charged FSmash
+- Document on Dedede's Gordo combo options by Lily [[link]](https://docs.google.com/document/d/187-1BJHZx3Xvtpc8MsKJC7U_Zw68gq19GviCfT2xDg0/edit?tab=t.0)
 
 #### Trick Shot
 - Hammer swings are very effective and sending Can flying.
@@ -135,11 +157,14 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - Inhale does not work against Wild Gunman's gunshot because Inhale actions don't work against hitscan projectiles that appear instantaneously and similarly vanish.
 - Wild Gunman is an effective shield versus Gordo, especially with the standing downed Gunmen.
 - Wild Gunman is relatively safe at midrange as Dedede cannot bypass it without risky maneuvers like DTilt or tilts/jab. Use with movement to start engagements and plan for combos e.g. with plat-Can.
+- Gunman's hitstun effect tends to be useful vs Dedede's body aerials and creates better punish windows for his disjoints. However it also makes the hurtbox on it and Gordo last longer.
 
 ---
 
 ## Opponent Counterplay
-[TBA]
+Use safe walls of normals to keep out can and approaches. Don't challenge Gunman with inhale and avoid landing on it with an aerial due to the hitstun. Be careful about inhaling can if they can run up and shield due to the kickback explosion; it's better to swat it when possible. Especially if the can is on stage, use disjoint pressure to close edgeguards when Duck Hunt is offstage. Inhaling clay pigeon is great as on success, followups on Duck Hunt are easy. 
+
+Try to stay close and corner Duck Hunt as their normals are very stubby and they rely on stage control to win the matchup. You can also plow through Gunman spawns at this range.
 
 ---
 
@@ -167,6 +192,6 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 
 Written and compiled by Vultures. Not peer reviewed.
 
-Some observations from Pyro-Is-Magic, Spin, tater.
+Some observations from Landslide, Pyro-Is-Magic, Spin, tater.
 
 Additional notes from [Peli's counterdocument](https://web.archive.org/web/20210718120607/https://www.twitlonger.com/show/n_1srohl0).
