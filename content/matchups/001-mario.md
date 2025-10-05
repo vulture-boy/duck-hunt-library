@@ -6,6 +6,7 @@
 ## External Resources
 - [Mario's SSBWiki Entry](https://www.ssbwiki.com/Mario_(SSBU))
 - [Mario's UltimateFrameData Page](https://ultimateframedata.com/mario.php)
+- [Mario's OOS options](https://www.outofshield.com/character?Character=Mario)
 - [SmashTube Query for Duck Hunt vs. Mario](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%9E%E3%83%AA%E3%82%AA&free_word=&region=&submit=#result")
 - [Mario Character Discord](https://discord.com/invite/xARdRQ3eGz)
 

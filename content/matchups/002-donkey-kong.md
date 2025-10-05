@@ -9,7 +9,8 @@ While Duck Hunt's stage control and turtling is in peak form against the heavywe
 ## External Resources
 
 [Donkey Kong's SSBWiki Entry](https://www.ssbwiki.com/Donkey_Kong_(SSBU))  
-[Donkey Kong's UltimateFrameData Page](https://ultimateframedata.com/donkey_kong.php)  
+[Donkey Kong's UltimateFrameData Page](https://ultimateframedata.com/donkey_kong.php) 
+- [Donkey Kong's OOS options](https://www.outofshield.com/character?Character=Donkey+Kong) 
 [SmashTube Query for Duck Hunt vs. Donkey Kong](https://smash-tube.com/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%89%E3%83%B3%E3%82%AD%E3%83%BC%E3%82%B3%E3%83%B3%E3%82%B0&free_word=&region=&submit=#result)  
 [Donkey Kong Character Discord](https://discord.com/invite/qMzMf8g)
 

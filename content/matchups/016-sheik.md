@@ -7,6 +7,7 @@ The Duck Hunt vs Sheik matchup is largely a defensive matchup for Duck Hunt. She
 ## External Resources
 - [Sheik's SSBWiki Entry](https://www.ssbwiki.com/Sheik_(SSBU))
 - [Sheik's UltimateFrameData Page](https://ultimateframedata.com/sheik.php)
+- [Sheik's OOS options](https://www.outofshield.com/character?Character=Sheik)
 - [SmashTube Query for Duck Hunt vs. Sheik](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%82%B7%E3%83%BC%E3%82%AF&free_word=&region=&submit=#result)
 - [Sheik Character Discord](https://discord.com/invite/MSbMHrY)
 

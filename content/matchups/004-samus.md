@@ -1,19 +1,75 @@
-# Samus & Dark Samus
+## Summary
+[no description available]
+
+---
 
 ## External Resources
 - [Samus's SSBWiki Entry](https://www.ssbwiki.com/Samus_(SSBU))
 - [Dark Samus's SSBWiki Entry](https://www.ssbwiki.com/Dark_Samus_(SSBU))
 - [Samus's UltimateFrameData Page](https://ultimateframedata.com/samus.php)
 - [Dark Samus's UltimateFrameData Page](https://ultimateframedata.com/dark_samus.php)
+- [Samus's OOS options](https://www.outofshield.com/character?Character=Samus)
+- [Dark Samus's OOS options](https://www.outofshield.com/character?Character=Dark+Samus)
 - [SmashTube Query for Duck Hunt vs. Samus / Dark Samus](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%82%B5%E3%83%A0%E3%82%B9%2F%E3%83%80%E3%83%BC%E3%82%AF%E3%82%B5%E3%83%A0%E3%82%B9&free_word=&region=&submit=#result)
 - [Samus / Dark Samus Character Discord](https://discord.com/invite/b69G8H6)
 
-## Summary
-[no description available]
+---
 
 ## Counterplay
 
-### Projectile Properties
+### Any State
+[TBA]
+
+### Neutral
+[TBA]
+
+### Advantage
+
+#### Anti-Air
+[TBA]
+
+#### Ledge Trapping
+[TBA]
+
+#### Edge Guarding
+[TBA]
+
+### Disadvantage
+
+#### Offstage
+[TBA]
+
+#### Overstage
+[TBA]
+
+#### On Ledge
+[TBA]
+
+### Stage Selection
+[TBA]
+
+### Combo Windows
+
+#### Duck Hunt Combo Windows
+[TBA]
+
+#### Opponent Combo Windows
+[TBA]
+
+### Other
+
+#### Game Start and Angel Platform
+[TBA]
+
+#### Timeout Considerations
+[TBA]
+
+#### Sudden Death
+[TBA]
+
+### Projectile Effectiveness
+
+### Samus' Missiles
 
 - Samus' Homing Missile will aim towards an opponent's centre of mass, regardless of how far away they are.
   - The Homing missile can only travel at an angle +/- 30 degrees [approx] from horizontal.
@@ -25,12 +81,44 @@
   - At a distance of about 7 units from Samus (almost 1/2 of Battlefield), Duck Hunt can duck beneath the projectile.
   - Novelty: At a distance of about 12.5 units from Samus, Duck Hunt can low profile the projectile with his ear scratch idle animation. This is about the distance from the ledge to the end of the far platform (Idles trigger every 2-6 seconds).
 
-### Projectile Effectiveness
-
-**Trick Shot**
+#### Trick Shot
 - Power Beam affects can differently depending on the level of charge. [would benefit from a visual aid]
   - Uncharged and nearly uncharged power beam shots will not hit the can on the ground.
   - Midair cans are affected by power beam knockback and will be sent at a very horizontal angle.
   - Power beam charge shots over two seconds of charge that hit a grounded can will send it over Duck Hunt if he is at spawning distance.
 - Morph Ball Bomb moves the can at about ping's distance away from itself.
 - Anchor can properties apply to all of samus' projectiles.
+
+#### Clay Pigeon
+[TBA]
+
+#### Wild Gunman
+[TBA]
+
+---
+
+## Opponent Counterplay
+[TBA]
+
+---
+
+## Recommended VODs
+[TBA]
+
+---
+## Move Frame Advantage Comparisons
+[TBA]
+
+---
+## Effective Tech and Percentage Windows
+[TBA]
+
+---
+
+## Outstanding Questions   
+[TBA]
+
+---
+### Contributions
+
+Written and compiled by Vultures. Not peer reviewed.

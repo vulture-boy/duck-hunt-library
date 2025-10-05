@@ -1,40 +1,172 @@
-# King Dedede
+## Summary
+King Dedede is a heavyweight whose slow options and deflectable projectile make him struggle to enter Duck Hunt's zoning, but reaps significant reward with close-up pressure and a threatening ledge advantage state.
+
+His protective and deflective options can be neutralized with Gunman's projectile, which can disrupt his Inhale and Gordo. Can covers platform movement and can explode on Dedede if released via Inhale on Duck Hunt's shield.
+
+King Dedede's NAir makes for effective and fast hitbox coverage around the ground and his hammer's disjoint occasionally is useful for knocking away Can and extending his reach.
+
+King Dedede is also very vulnerable to anti-airing provided that his F7 nair, jump counts and hammer range are respected.
+
+---
 
 ## External Resources
 - [King Dedede's SSBWiki Entry](https://www.ssbwiki.com/King_Dedede_(SSBU))
 - [King Dedede's UltimateFrameData Page](https://ultimateframedata.com/king_dedede.php)
+- [King Dedede's OOS options](https://www.outofshield.com/character?Character=King+Dedede)
 - [SmashTube Query for Duck Hunt vs. King Dedede](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%87%E3%83%87%E3%83%87&free_word=&region=&submit=#result)
 - [King Dedede Character Discord](https://discord.com/invite/fccCz2G)
 
-## Summary
-King Dedede is a heavyweight whose slow options and deflectable projectile make him struggle to enter Duck Hunt's zoning, but reaps significant reward with close-up engagements and pressure and a threatening ledge advantage state.
+---
 
-His protective and deflective options can be neutralized with Gunman's projectile disrupting his Suck and Gordo and, up close, spitting out a Can on Duck Hunt's shield.
+### Any State
+- As a superheavy, Dedede regularly lives to about 200%
+- Dedede has a slow horizontal speed but decent vertical mobility; accordingly.
+- Play from at least midrange when possible but make it a goal to keep the game away from making you cornered.
+- Dedede has a total of 4 midair jumps and a f3 jumpsquat.
+- Inhale acts as a command grab and a pseudo-reflector. 
+- Dedede's Fair disjointedly covers more range at the cost of additional hit lag (but it hits like a truck).
+- The landing of Dedede's UpB have 'stars' that are -'ve on hit at low%.
 
-King Dedede's Nair makes for effective and fast hitbox coverage around the ground and his hammer's disjoint occasionally is useful for knocking away Can and extending his reach.
-
-King Dedede is also very vulnerable to anti-airing provided that his F7 nair, jump counts and hammer range are respected.
-
-## Key Notes
+### Neutral
 - A major priority for King Dedede is to get in on Duck Hunt as at midrange and beyond, Duck Hunt's projectiles make for great initiation and chaining tools.
-- SHFF Nair is effective for Dedede as a means to cover horizontal distance at midrange, and his Fair disjointedly covers more range at the cost of additional hit lag (but if it's expected to connect, it's likely worth it).
-- Can and Clay Pigeon can be sucked and chucked. We particularly don't want the latter to be sent back to us as it can create dangerous disadvantage states.
-- If Dedede sucks, spawning Can and immediately shielding at close range will blow up Dedede with the benefit of the added multiplier.
-- Gunman is relatively safe at midrange as Dedede cannot bypass it without risky maneuvers like DTilt or tilts/jab. Use with movement to start engagements and plan for combos e.g. with plat-Can.
-- Both characters have relatively strong advantage states against eachother.
-- UAir is great for juggling, but watch out for Nair in the air, which is F7.
+- SHFF Nair is effective for Dedede as a means to cover horizontal distance at midrange with a protective hurtbox.
+- As a command grab, Inhale is used to condition opponents that shield or abuse projectiles vs Dedede. After being spit out, Dedede has a few follow up options that he can use to improve its reward, generally creating advantage state. It has 74f of lag on whiff. His head is vulnerable at this time.
+- Respect BAir (-7) on block and don't jump to punish it afterwards. 
 - If shielding Dedede's jab, when DHD is only being hit by the stub outside the barrel of Dedede's hammer, releasing shield can result into a parry (or leave DHD outside of Jab's range). You can use this opportunity to punish with a CP. [[demo by embo_z]](https://youtu.be/5S3_aUfC5fI?feature=shared&t=198)
-- If Dedede air camps, wait for him to land. He has four (4) midair jumps.
+- UTilt has decent shield pushback but is -21 on shield. [probably can be low profiled by Low Duck moves like DTilt.]
+- DHD's DTilt is safe from all of Dedede's OOS options.
+- DTilt: can upsmash it OOS.
+- DThrow: Reactable, DI Away.
+- USmash: -40 on shield; hard punish.
+- Unsurprisingly, Dedede struggles to escape when cornered.
+- Dedede has large tech rolls (but he's still huge)
+
+### Advantage
+
+#### Anti-Air
+- Dedede has a total of 4 midair jumps. If he chooses to air camp, it's rarely worth physically chasing him as we gain more by staying stable close to stage with our trap setups and letting him burn resources to make his landing more predictable.
+- It's common for Dedede to land with some sort of aerial due to them either being quick to start or having large disjoints; if you plan to intercept, do it assertively and mindfully of their burst range from air.
+- Because Dedede's air speed is poor (and f4 airdodge), and midair jumps don't give much height, it's very easy to shark with UAir but be cautious about spacing and the risk of Dedede FF NAirdodging into an uptilt.
+- NAir comes out very fast (f7) and can punish badly spaced anti airs; it is his fastest tool against anti-air attacks when midair.
+- DAir goes through platforms; be careful when sharking.
+- If it's convenient, you can send can upwards towards Dedede but it will reduce the effectiveness of your grounded trapping game if they land.
+
+#### Ledge Trapping
+- Being at roll distance protects you from UAir sharking.
+- Other ledge options include ledge drop Gordo, Fair, Inhale (can be bait and punished).
+- Trying to 2 frame Dedede's Super Jump (Up B) is risky due to the armor properties; it can kill at [70%?] if he lands on you afterwards. Sometimes a 'hail mary' option when regrabbing ledge.
+- BAir can is an easy way to put pressure on Dedede if they try to plank without committing to the risks of challenging his position.
+
+#### Edge Guarding
+- Dedede's enormous hurtbox makes hitting him very easy with projectiles. Aerials on the other hand are dangerous; his multiple jumps and disjointed hammer are very strong disuasive tools.
+- That being said, if he uses Gordo offstage it is very punishable if you can deal with it on time (e.g. with Can)
+- Dedede's UpB has armor [what kind? frames?] at the start
+
+### Disadvantage
+
+#### Offstage
+- If you know you're about to go into an offstage situation and Can is already on stage, consider forcing Can detonation so that you can use it in your recovery process.
 - Beware ledgeslip FAir when recovering to ledge.
-- Ideally you want to play from about half a stage away from Dedede.
-- Jet Hammer has full body heavy armour during the swing, only on the ground. It dips below ledge.
+- Duck Hunt's slow upwards Duck Jump is very punishable so be sure to protect yourself with Can whenever safe to do so.
 
-## VODs
+#### Overstage
+- Dedede's cylindrical UpAir lingers for a long time and his grounded anti-air moves have wide coverage. It is safer to recover from Offstage rather than Overstage if you can avoid ledgetrap scenarios.
+- Dedede's UAir sends behind Dedede at the back or middle of the hammer, otherwise forwards. DI down & away.
+- Dedede's Uptilt
+
+#### On Ledge
+
+- Dedede can use combinations of Jet Hammer/Inhale/Normals and Gordo when ledgetrapping. He will usually pick Jet Hammer if he has the time, otherwise Gordo or just neutrals.
+
+##### Jet Hammer
+- Jet Hammer is a very powerful tool on ledge
+- With Jet Hammer, Dedede can punish (and probably KO) the following on reaction: Neutral Getup, Getup Attack, Ledge Roll, Ledge Stalling.
+- Jumping is usually effective and the timing is harder for Dedede to call out. The safest option is usually to retreat to a platform or phantom footstool.
+- If Dedede jumps while using it (i.e to punish a jump-in), it can be interrupted with a FAir if you time it well but it's riskier than avoiding it entirely.
+- After swinging it takes a decent amount of time for him to recover [how much?]. The Jet Hammer can be held virtually indefinitely but it damages Dedede up to 100%.
+- If the ledge trap includes a Gordo, it covers virtually all options but the Gordo will have decreased damage the longer it's out; you can drop below ledge and take the Gordo hit if necessary to avoid a KO.
+
+### Stage Selection
+[TBA]
+
+### Combo Windows
+
+#### Duck Hunt Combo Windows
+[TBA]
+
+#### Opponent Combo Windows
+[TBA]
+
+### Other
+
+#### Game Start and Angel Platform
+[TBA]
+
+#### Timeout Considerations
+[TBA]
+
+#### Sudden Death
+[TBA]
+
+### Projectile Effectiveness
+
+#### Dedede's Gordo
+- 29f startup, 59FAF
+- Becomes weaker the longer it's out.
+- It is programmed to travel towards Dedede when hit.
+- Can be angled to be slow and vertical or fast and forward
+- If up close, you can simply hit Dedede with a burst option underneath [DA? Confirm which moves are useful here].
+- Has a 50%[?] chance of ledge sticking when the ledgetrap setup is used.
+
+#### Trick Shot
+- Hammer swings are very effective and sending Can flying.
+- If Dedede Inhales a Can, immediately shielding at close range will blow up Dedede with the benefit of the added multiplier, which can KO Dedede earlier than usual.
+
+#### Clay Pigeon
+- Having Clay Pigeon sent back via Inhale is undesirable as it can create dangerous disadvantage states and we can't act out of clay pigeon fast enough generally in Neutral; save it as an advantage or combo linking tool, or use it in unreactable situations.
+- Clay Pigeon is released relatively high from Inhale due to the position of Dedede's mouth, so it's possible to low profile it up close (e.g. when going for a throw)
+- Specific opportunities include Gunman hitlag, FTilt counter, slow moves (USmash, FSmash), long range with active can, roll reads.
+- If you can land pigeon, it has a generous chaining window and can be finished with a DAir.
+- Hammer swings can destroy pigeon [please confirm]
+- The pigeon explosion particles affect Gordo.
+- The pigeon explosion particles are swallowed by Dedede in some rare instances [please confirm].
+
+#### Wild Gunman
+- Inhale does not work against Wild Gunman's gunshot because Inhale actions don't work against hitscan projectiles that appear instantaneously and similarly vanish.
+- Wild Gunman is an effective shield versus Gordo, especially with the standing downed Gunmen.
+- Wild Gunman is relatively safe at midrange as Dedede cannot bypass it without risky maneuvers like DTilt or tilts/jab. Use with movement to start engagements and plan for combos e.g. with plat-Can.
+
+---
+
+## Opponent Counterplay
+[TBA]
+
+---
+
+## Recommended VODs
 - [embo_z (Duck Hunt) vs Pengu-win (King Dedede) - Feb 4th, 2025](https://www.youtube.com/watch?v=5S3_aUfC5fI)
-  - Embo_z demonstrates strong control over space, spacing, and awareness of Dedede's punishable states. Pengu-win plays to get in quickly for Nairs, grabs, and high impact swings while embo_z initiates from midrange into multiple consecutive hits, punishing Dedede's Suck with can into shield and openings (e.g. from Jab) into long CP chains. Can parry setups on can at the start of stocks help keep the can positioned on stage. Pengu-win gets some chains off Nairs and uses Suck midair and aerials off ledge to keep can and ledge pressure off.
+  - Embo_z demonstrates strong control over space, spacing, and awareness of Dedede's punishable states. Pengu-win plays to get in quickly for Nairs, grabs, and high impact swings while embo_z initiates from midrange into multiple consecutive hits, punishing Dedede's Inhale with can into shield and openings (e.g. from Jab) into long CP chains. Can parry setups on can at the start of stocks help keep the can positioned on stage. Pengu-win gets some chains off Nairs and uses Inhale midair and aerials off ledge to keep can and ledge pressure off.
 - [Katamari [かたまり] (Duck Hunt) vs Garuku [ガルク] (King Dedede) - Mar 12th, 2023](https://www.youtube.com/watch?v=9_-g1EbKTLI)
-  - Katamari's VOD with Garuku demonstrates more standard gameplay VS Dedede; Katamari controls space with typical Duck Hunt techniques and Garuku reveals Dedede's ability to challenge them and more standard play for a heavyweight challenging a control zoner. Katamari uses CP more liberally than embo, demonstrating its use as a shield pressure tool as well as Dedede's ability to challenge bad tosses. Garuku demonstrates some of Dedede's more common ledgetrap techniques including Jet Hammer and sweeping hammer aerials. Garuku succeeds in getting in with the aid of advancing shield and capitalizing on Katamari's spacing when Duck Hunt attempts to make unsafe plays at about a quarter stage's distance. Katamari's use of Gunman as a backup shield for a grounded can helps avoid reversal situations, though arguably less effective than embo's strategy of shielding expected can Sucks.
+  - Katamari's VOD with Garuku demonstrates more standard gameplay VS Dedede; Katamari controls space with typical Duck Hunt techniques and Garuku reveals Dedede's ability to challenge them and more standard play for a heavyweight challenging a control zoner. Katamari uses CP more liberally than embo, demonstrating its use as a shield pressure tool as well as Dedede's ability to challenge bad tosses. Garuku demonstrates some of Dedede's more common ledgetrap techniques including Jet Hammer and sweeping hammer aerials. Garuku succeeds in getting in with the aid of advancing shield and capitalizing on Katamari's spacing when Duck Hunt attempts to make unsafe plays at about a quarter stage's distance. Katamari's use of Gunman as a backup shield for a grounded can helps avoid reversal situations, though arguably less effective than embo's strategy of shielding expected can Inhale actions.
 
-## Contributors
-Written and compiled by Vultures  
-Not peer reviewed  
+---
+## Move Frame Advantage Comparisons
+[TBA]
+
+---
+## Effective Tech and Percentage Windows
+[TBA]
+
+---
+
+## Outstanding Questions   
+[TBA]
+
+---
+### Contributions
+
+Written and compiled by Vultures. Not peer reviewed.
+
+Some observations from Pyro-Is-Magic, Spin, tater.
+
+Additional notes from [Peli's counterdocument](https://web.archive.org/web/20210718120607/https://www.twitlonger.com/show/n_1srohl0).

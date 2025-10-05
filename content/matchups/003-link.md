@@ -3,6 +3,7 @@
 ## External Resources
 - [Link's SSBWiki Entry](https://www.ssbwiki.com/Link_(SSBU))
 - [Link's UltimateFrameData Page](https://ultimateframedata.com/link.php)
+- [Link's OOS options](https://www.outofshield.com/character?Character=Link)
 - [SmashTube Query for Duck Hunt vs. Link](https://smash-tube.com/en/result.php?player1=&character1=%E3%83%80%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%88&player2=&character2=%E3%83%AA%E3%83%B3%E3%82%AF&free_word=&region=&submit=#result)
 - [Link Character Discord](https://discord.com/invite/Wynbrkd)
 
