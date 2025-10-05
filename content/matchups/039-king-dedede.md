@@ -107,7 +107,6 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - NAir -> UAir ('UpDog') 105-135% (+5% BattleField / Kalos, +3% Smashville / T&C) [[src]](https://xcancel.com/UltD3Cord/status/1292638612044091394)
 - NAir (Weak) -> SH NAir (Weak) 55-64% [[src]](https://docs.google.com/document/d/12o0KrW8uGFG1xtFxS6MITiWKkWIwCXKOazvNq2LFcXI/edit?tab=t.0)
 - NAir (Weak) -> FH NAir (Weak) 75-90% [[src]](https://docs.google.com/document/d/12o0KrW8uGFG1xtFxS6MITiWKkWIwCXKOazvNq2LFcXI/edit?tab=t.0)
-- 
 
 ### Other
 
