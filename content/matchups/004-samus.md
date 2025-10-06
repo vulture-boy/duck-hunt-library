@@ -1,5 +1,5 @@
 ## Summary
-[no description available]
+[no summary available]
 
 ---
 
@@ -18,15 +18,18 @@
 ## Counterplay
 
 ### Any State
-[TBA]
+- Besides Spin Attack (Up Special), we generally have better frame data than Samus across the board.
+- Samus' range with neutral attacks and the tether attack generally extend further than ours but are more committal.
+- Like most heavies that struggle to get in on Duck Hunt, Samus has greater reward off successful engagement. She will likely accumulate a good deal of damage, meaning that she will have more opportunities than the average character for this.
 
 ### Neutral
-[TBA]
+- In general, our projectiles invalidate Samus' horizontal projectiles when deployed into at least midrange. 
+- Because of Duck Hunt's projectile priority, it creates a situation where Samus is forced to close the distance to be effective, which her kit isn't specialized for.
 
 ### Advantage
 
 #### Anti-Air
-[TBA]
+- Samus' Morph Ball provides a great discentive for sharking her since it reverses the situation if we're hit by the bomb and mixes up her movement with a small hurtbox.
 
 #### Ledge Trapping
 [TBA]
@@ -43,7 +46,7 @@
 [TBA]
 
 #### On Ledge
-[TBA]
+- Samus' biggest advantage in the MU is that she has a very effective ledgetrap game involving the use of Morph Ball Bomb to force a ledge option that can be covered with FSmash or a large Charge Shot.
 
 ### Stage Selection
 [TBA]
@@ -90,10 +93,11 @@
 - Anchor can properties apply to all of samus' projectiles.
 
 #### Clay Pigeon
-[TBA]
+- Clay Pigeon eliminates all charge shots safely provided that it is far enough away / not to not explode on Duck Hunt, which Samus can utilize for a fallback combo. Weak charge shot will be tanked by Clay Pigeon [confirm states / staleness].
+- Clay Pigeon also eliminates both Missiles, but Samus has very marginally (a few frames) more advantage off the interaction and can use it as an opening for a followup Charge Shot, so it is not an indefinite solution. [please confirm]
 
 #### Wild Gunman
-[TBA]
+- Gunman can tank a weak charge shot [and homing missile? confirm]
 
 ---
 

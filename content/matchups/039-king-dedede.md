@@ -21,7 +21,7 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 
 ### Any State
 - As a superheavy, Dedede regularly lives to about 200%
-- Dedede has a slow horizontal speed but decent vertical mobility; accordingly.
+- Dedede has a slow horizontal speed but decent vertical mobility; prioritize horizontal coverage.
 - Play from at least midrange when possible but make it a goal to keep the game away from making you cornered.
 - Dedede has a total of 4 midair jumps and a f3 jumpsquat.
 - Inhale acts as a command grab and a pseudo-reflector. 
@@ -76,7 +76,8 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 #### Overstage
 - Dedede's cylindrical UpAir lingers for a long time and his grounded anti-air moves have wide coverage. It is safer to recover from Offstage rather than Overstage if you can avoid ledgetrap scenarios.
 - Dedede's UAir sends behind Dedede at the back or middle of the hammer, otherwise forwards. DI down & away.
-- Dedede's Uptilt
+- Dedede's Uptilt, FSmash and UpSmash have sizeable coverage.
+- If you can outpace Dedede, overstage can work but Dedede is very good at covering this space.
 
 #### On Ledge
 - Dedede can use combinations of Jet Hammer/Inhale/Normals and Gordo when ledgetrapping. He will usually pick Jet Hammer if he can't get optimal spacing for the angled Gordo.
@@ -128,7 +129,6 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - Can be 'caught' and sent out again with the Gordo spawn input (faster than inhale)
 - It is programmed to travel towards Dedede when hit.
 - Can be angled to be slow and vertical or fast and forward. C-Stick ranges are detailed in [this video](https://www.youtube.com/watch?v=FzyFWQ1UnOA) and [this doc](https://docs.google.com/document/d/1EIuAPYeCVWFTlT8vRFlskCzLQwEFTqB5KC8DOGGRLA4/edit?tab=t.0), including C-Stick modified angles like 'CUP' (C stick UP) that cover ledge well and slip the ledge lip reliably.
-- An optimal spacing for Gordo bounces such that it 
 - Gordo hitlag can bounce into a character a second time if it hits them at a particular position in their hurtbox such that it moves and is still in their hurtbox when it reactivates.
 - Inhale can be used off Gordo Hitlag (unstale deals 30.8%)
 - If up close, you can simply hit Dedede with a burst option underneath [DA? Confirm which moves are useful here].
@@ -140,8 +140,13 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 - Document on Dedede's Gordo combo options by Lily [[link]](https://docs.google.com/document/d/187-1BJHZx3Xvtpc8MsKJC7U_Zw68gq19GviCfT2xDg0/edit?tab=t.0)
 
 #### Trick Shot
-- Hammer swings are very effective and sending Can flying.
+- Hammer swings are very effective and sending Can flying; FTilt, FAir, DTilt if DHD is grounded.
 - If Dedede Inhales a Can, immediately shielding at close range will blow up Dedede with the benefit of the added multiplier, which can KO Dedede earlier than usual.
+- DHD can use Can to cover Dedede's ledgehang without committing to entering his threat range.
+- Long range Gordo is an option to detonate Can.
+- An overheating can causes an explosion swallow if Inhaled [confirm this?].
+- Can generally explodes on Gordo and will usually beat NAir
+- Like DHD rapid jab, Dedede rapid Jab on Can stalls it in place, which is an ineffective option for Dedede.
 
 #### Clay Pigeon
 - Having Clay Pigeon sent back via Inhale is undesirable as it can create dangerous disadvantage states and we can't act out of clay pigeon fast enough generally in Neutral; save it as an advantage or combo linking tool, or use it in unreactable situations.
@@ -161,9 +166,15 @@ King Dedede is also very vulnerable to anti-airing provided that his F7 nair, ju
 ---
 
 ## Opponent Counterplay
-Use safe walls of normals to keep out can and approaches. Don't challenge Gunman with inhale and avoid landing on it with an aerial due to the hitstun. Be careful about inhaling can if they can run up and shield due to the kickback explosion; it's better to swat it when possible. Especially if the can is on stage, use disjoint pressure to close edgeguards when Duck Hunt is offstage. Inhaling clay pigeon is great as on success, followups on Duck Hunt are easy. 
+Use safe walls of normals to keep out can and approaches. Be mindful of the direction the character hitting the can is facing as it will ping in that diretion. It is a utility move that can setup confirms off moves / throws; if possible, remove it from stage using FTilt, FAir, DTilt (if DHD is grounded), or long range Gordo. Be careful about inhaling can if they can run up and shield due to the kickback explosion; it's better to swat it when possible. Especially if the can is on stage, use disjoint pressure to close out edgeguards while Duck Hunt is offstage.
 
-Try to stay close and corner Duck Hunt as their normals are very stubby and they rely on stage control to win the matchup. You can also plow through Gunman spawns at this range.
+Don't challenge Gunman with inhale or FTilt. The Gunmen randomly cycle between 5 types before resetting (it's not really worth mentally tracking which one might come out next). Downing Gunman onto the stage makes it take longer for it to respawn. Try to down Gunman with Gordo as its long range and active state on contact make it the least committal option. Other options include FAir/NAir (landing knockdown, more hitstun), DTilt (grounded, less hitstun) and UTilt depending on the scenario while being mindful that DHD can use the hitstun on Gunman for punishes.
+
+Clay Pigeon is the most committal of DHD's options as it has a large amount of endlag; it should only be used by DHD to cover space or catch DDD in lag. The move his highly punishable if avoided or bypassed, but be mindful that hitting the clay pigeon (physically or with badly-positioned Gordo) will usually detonate it on Dedede, hitting him in the process. Shielding causes the pigeon to bounce diagonally upwards above Dedede before resting, which locks down Dedede's options. Accordingly, it's best to avoid or dodge the Pigeon entirely, or secure an Inhale. Inhaling clay pigeon is great as on success as followups on Duck Hunt are easy if he is within close range and DHD is slow to be able to act. Other options are fullhop Gordo (catches the endlag depending on spacing), fullhop landing -> aerial or grounded option (since DHD is unlikely to be finished their animation during this time). 
+
+Try to stay close and corner Duck Hunt as their normals are very stubby and they rely on stage control to win the matchup. You can also plow through Gunman spawns at this range. Also keep in mind that trades with a Can spawn will generally be in your favour since DHD generally needs to get Dedede to about 200% in order to secure stocks without his kill confirms.
+
+When offstage, use hammer aerials to protect yourself vs greedy approaches or non-overheating Cans and when edgeguarding DHD be liberal with hammer if they can't protect their recovery with Can. DA is an effective 2-frame option but DTilt is not.
 
 ---
 
@@ -189,7 +200,7 @@ Try to stay close and corner Duck Hunt as their normals are very stubby and they
 ---
 ### Contributions
 
-Written and compiled by Vultures. Not peer reviewed.
+Written and compiled by Vultures & Smasher. Not peer reviewed.
 
 Some observations from Landslide, Pyro-Is-Magic, Spin, tater.
 
